@@ -16,22 +16,6 @@
 #include <frc/Compressor.h>
 using namespace frc;
 
-//Motor Definitons
-#define LEFT_FRONT_MOTOR_PORT 11
-#define RIGHT_FRONT_MOTOR_PORT 12
-#define LEFT_BACK_MOTOR_PORT 10
-#define RIGHT_BACK_MOTOR_PORT 13
-//Solenoid Definitions
-#define ENGAGE_RIGHT_MOTOR_SOLENOID_PCM_PORT 1
-#define ENGAGE_LEFT_MOTOR_SOLENOID_PCM_PORT 1
-#define ENGAGE_RIGHT_MOTOR_SOLENOID_OPEN_PORT 2
-#define ENGAGE_LEFT_MOTOR_SOLENOID_OPEN_PORT 0
-#define ENGAGE_RIGHT_MOTOR_SOLENOID_CLOSE_PORT 3
-#define ENGAGE_LEFT_MOTOR_SOLENOID_CLOSE_PORT 1
-
-// #include <frc/TimedRobot.h>
-#include <frc/smartdashboard/SendableChooser.h>
-
 class Robot : public CORERobot {
  public:
   Robot();
@@ -47,10 +31,8 @@ class Robot : public CORERobot {
   const std::string kAutoNameDefault = "Default";
   const std::string kAutoNameCustom = "My Auto";
   std::string m_autoSelected;
-  TalonSRX m_leftFrontMotor, m_rightFrontMotor, m_leftBackMotor, m_rightBackMotor;
-  DoubleSolenoid m_engageLeftMotorSolenoid, m_engageRightMotorSolenoid;
-  bool m_solenoidEngaged;
-  Compressor compressor;
+
+  
 };
 
 //hello
